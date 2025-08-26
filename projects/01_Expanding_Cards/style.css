@@ -45,8 +45,8 @@ body{
     opacity: 0;
 }
 
-.panel.active{
-    flex: 5;
+.panel.active{  /* flex 값이 확대 값임 */
+    flex: 1;
 }
 
 .panel.active h3{
@@ -54,10 +54,11 @@ body{
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px){  /* 480 미만의 화면의 코드 */
     .container{
         width: 100vw;
     }
+    /* 그 경우 3번째, 4번째 패널을 안보이게 만든다. => 반응형 코드 */
     .panel:nth-of-type(3),
     .panel:nth-of-type(4){
         display: none;
