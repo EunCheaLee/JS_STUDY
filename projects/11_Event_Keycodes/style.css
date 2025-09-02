@@ -1,0 +1,43 @@
+@import url('https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+
+*{box-sizing: border-box;}
+
+body{
+    background: linear-gradient(to bottom, #651215, #241b1d);
+    font-family: 'Wanted Sans Variable', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.key{
+    border: 1px solid #241b1d;
+    background-color: #241b1d;
+    color: firebrick;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 150px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.key small{
+    position: absolute;
+    top:-24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+    border-radius: 15px;
+}
